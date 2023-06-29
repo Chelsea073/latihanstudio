@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chkP"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="MY PROFILE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Nama"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edtnama"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtnama"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Email"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edtemail"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/edtnama"
+        app:layout_constraintTop_toBottomOf="@+id/edtnama"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/chkp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="programing"
+        app:layout_constraintStart_toStartOf="@+id/edtemail"
+        app:layout_constraintTop_toBottomOf="@+id/edtemail" />
+
+    <CheckBox
+        android:id="@+id/chkj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="jaringan"
+        app:layout_constraintStart_toEndOf="@+id/chkp"
+        app:layout_constraintTop_toBottomOf="@+id/edtemail" />
+
+    <CheckBox
+        android:id="@+id/chkd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="database"
+        app:layout_constraintStart_toStartOf="@+id/chkp"
+        app:layout_constraintTop_toBottomOf="@+id/chkp" />
+
+    <CheckBox
+        android:id="@+id/chkm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="multimedia"
+        app:layout_constraintStart_toStartOf="@+id/chkj"
+        app:layout_constraintTop_toBottomOf="@+id/chkj" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Hobby"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/chkd"
+        app:layout_constraintTop_toBottomOf="@+id/chkd" />
+
+    <RadioButton
+        android:id="@+id/rbpria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Pria"
+        app:layout_constraintStart_toStartOf="@+id/chkd"
+        app:layout_constraintTop_toBottomOf="@+id/chkd" />
+
+    <RadioButton
+        android:id="@+id/rbwanita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wanita"
+        app:layout_constraintStart_toStartOf="@+id/rbpria"
+        app:layout_constraintTop_toBottomOf="@+id/rbpria" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="kelamin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkd" />
+</androidx.constraintlayout.widget.ConstraintLayout>
